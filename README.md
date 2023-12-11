@@ -44,6 +44,17 @@ The scripts directory houses various Python scripts, each tailored for specific 
 5) Results:
 
 - Check the output folders in data for processed datasets and model predictions.
+
+### Requirement Python Libraries
+Please use the version new than or equal to the python library in the list
+ - Numpy v1.21.0
+ - Pandas v2.0.3
+ - sklearn v1.3.2
+ - matplotlib v3.8.2
+ - seaborn v0.12.0b3
+ - calendar v2.5
+ - math v3.8
+ - tqdm v2.2.3
 - Visualizations and models' performance metrics are saved in the results folder.
 
 ### Replicability
