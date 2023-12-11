@@ -28,12 +28,12 @@ The scripts directory houses various Python scripts, each tailored for specific 
 2) Data Preparation:
 
 - The raw data is stored in Raw_Data folder.
-- Run preprocessing.py to clean and normalize the data. The preprocessed dataset will automatically be saved under the same directory of the running python file.
+- Run preprocessing.py to clean and normalize the raw data. The preprocessed dataset will automatically be saved under the same directory of the running python file.
 - Execute train_test_split.py to split the data into training and testing sets. The data will be splitted into 4 files: xTrain, yTrain, xTest, yTest. x~ represent the feature set, and y~ represent target variable set. The files will be saved under the same directory of the running python file.
 
 3) Model Selection and Training:
 
-- Use `find_optimal_2.5and10.py` to identify the best models and their parameters.
+- Use `find_optimal_2.5and10.py` to identify the each models' best parameters. Record the best hyperparameters.
 - Train the models on your dataset using `train_with_optimal_2.5and10.py`.
 
 4) Analysis:
