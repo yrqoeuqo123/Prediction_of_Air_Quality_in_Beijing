@@ -60,3 +60,4 @@ Please use the version new than or equal to the python library in the list
  - calendar v2.5
  - math v3.8
  - tqdm v2.2.3
+ - tabulate v0.8.0
