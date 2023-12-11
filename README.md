@@ -23,13 +23,13 @@ The scripts directory houses various Python scripts, each tailored for specific 
 
 ## How to Use This Repository
 
-1) Setting Up: Clone the repository and install the required dependencies listed in requirements.txt.
+1) Setting Up: Clone the repository and install the required python libraries listed in requirements.txt.
 
 2) Data Preparation:
 
-- Place your raw data in the raw_data folder.
-- Run preprocessing.py to clean and normalize the data.
-= Execute train_test_split.py to split the data into training and testing sets.
+- The raw data is stored in Raw_Data folder.
+- Run preprocessing.py to clean and normalize the data. The preprocessed dataset will automatically be saved under the same directory of the running python file.
+- Execute train_test_split.py to split the data into training and testing sets. The data will be splitted into 4 files: xTrain, yTrain, xTest, yTest. x~ represent the feature set, and y~ represent target variable set. The files will be saved under the same directory of the running python file.
 
 3) Model Selection and Training:
 
