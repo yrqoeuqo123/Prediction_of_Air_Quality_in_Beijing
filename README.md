@@ -16,10 +16,10 @@ The data directory is organized into subfolders to manage different stages of da
 The scripts directory houses various Python scripts, each tailored for specific tasks in the research process:
 
 - `pearson_corr_heatmap.py`: Generates Pearson correlation heatmaps to explore relationships between different environmental variables.
-- find_optimal_2.5and10.py: Dedicated to finding the optimal machine learning models for predicting PM2.5 and PM10 levels. It includes hyperparameter tuning and model selection.
-- train_with_optimal_2.5and10.py: Utilizes the optimal model parameters identified by find_optimal_2.5and10.py to train the models on the full dataset.
-- train_test_split.py: Handles the splitting of the dataset into training and testing sets, ensuring a robust validation process.
-- preprocessing.py: Conducts initial data preprocessing tasks such as cleaning, encoding, and normalization.
+- `find_optimal_2.5and10.py`: Dedicated to finding the optimal machine learning models for predicting PM2.5 and PM10 levels. It includes hyperparameter tuning and model selection.
+- `train_with_optimal_2.5and10.py`: Utilizes the optimal model parameters identified by `find_optimal_2.5and10.py` to train the models on the full dataset.
+- `train_test_split.py`: Handles the splitting of the dataset into training and testing sets, ensuring a robust validation process.
+- `preprocessing.py`: Conducts initial data preprocessing tasks such as cleaning, encoding, and normalization.
 
 ## How to Use This Repository
 
@@ -33,12 +33,12 @@ The scripts directory houses various Python scripts, each tailored for specific 
 
 3) Model Selection and Training:
 
-- Use find_optimal_2.5and10.py to identify the best models and their parameters.
-- Train the models on your dataset using train_with_optimal_2.5and10.py.
+- Use `find_optimal_2.5and10.py` to identify the best models and their parameters.
+- Train the models on your dataset using `train_with_optimal_2.5and10.py`.
 
 4) Analysis:
 
-- To analyze correlations between variables, run pearson_corr_heatmap.py.
+- To analyze correlations between variables, run `pearson_corr_heatmap.py`.
 - The output will be stored in a designated folder for results.
   
 5) Results:
