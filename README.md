@@ -37,3 +37,7 @@ This project is designed for full replicability. Follow the outlined steps using
 - [math v3.8](https://docs.python.org/3/library/math.html)
 - [tqdm v2.2.3](https://tqdm.github.io/)
 - [tabulate v0.8.0](https://pypi.org/project/tabulate/)
+
+## Contributors
+This project was developed by a team of dedicated students from Emory University. We are passionate about using data science to address environmental issues and improve public health outcomes. Our team combines expertise in machine learning, data analysis, and environmental science to provide insightful research on air quality in Beijing.
+
