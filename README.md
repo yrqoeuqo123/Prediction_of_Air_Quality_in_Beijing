@@ -45,6 +45,11 @@ The scripts directory houses various Python scripts, each tailored for specific 
 
 - Check the output folders in data for processed datasets and model predictions.
 
+- Visualizations and models' performance metrics are saved in the results folder.
+
+### Replicability
+This project is designed for full replicability. By following the steps outlined above and using the provided scripts, you can replicate the entire study or apply the methodology to similar datasets.
+
 ### Requirement Python Libraries
 Please use the version new than or equal to the python library in the list
  - Numpy v1.21.0
@@ -55,7 +60,3 @@ Please use the version new than or equal to the python library in the list
  - calendar v2.5
  - math v3.8
  - tqdm v2.2.3
-- Visualizations and models' performance metrics are saved in the results folder.
-
-### Replicability
-This project is designed for full replicability. By following the steps outlined above and using the provided scripts, you can replicate the entire study or apply the methodology to similar datasets.
