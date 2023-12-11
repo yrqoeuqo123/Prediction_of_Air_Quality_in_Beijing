@@ -71,8 +71,8 @@ hyperparameters = {
         'alpha_2': [1e-6, 1e-5, 1e-4]
     },
     'PolynomialRegression': {
-        'model': Pipeline([('poly', PolynomialFeatures()), ('linear', LinearRegression())]),
-        'params': {'poly__degree': [2, 3]}
+    'poly__degree': [2, 3],
+    'linear__fit_intercept': [True, False]
     },
     'SGD': {
         'penalty': ['l2', 'l1', 'elasticnet'],
