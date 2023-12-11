@@ -1,63 +1,39 @@
-# Prediction_of_Air_Quality_in_Beijing
-Investigating Beijing's air quality, this study uses the "Beijing Multi-Site Air-Quality Data" (March 2013 - February 2017) to predict PM2.5 and PM10 levels. Emphasizing machine learning model evaluation, it analyzes pollution patterns from 12 monitoring stations, assessing urban air pollution dynamics.
+# Prediction of Air Quality in Beijing
 
 ## Overview
-This repository contains all the necessary code and results for the study on air pollution in Beijing. It's structured to ensure replicability and ease of use. The project is divided into two main directories: data and scripts, each serving a specific purpose in the research workflow.
+This repository hosts the code and results for a study on air pollution in Beijing, using data from March 2013 to February 2017. It focuses on predicting PM2.5 and PM10 levels, leveraging machine learning techniques and data from 12 monitoring stations.
 
 ## Repository Structure
-### Data Folder
-The data directory is organized into subfolders to manage different stages of data processing:
 
-- raw_data: Contains the original datasets as obtained from the sources.
-- preprocessed_data: Stores the datasets after initial preprocessing steps like cleaning and normalization.
-- train_test_split_data: Holds the data split into training and testing sets for model validation.
+### Data Folder
+- `raw_data`: Original datasets from various sources.
+- `preprocessed_data`: Datasets after initial preprocessing (cleaning, normalization).
+- `train_test_split_data`: Data split into training and testing sets.
 
 ### Scripts Folder
-The scripts directory houses various Python scripts, each tailored for specific tasks in the research process:
-
-- `pearson_corr_heatmap.py`: Generates Pearson correlation heatmaps to explore relationships between different environmental variables.
-- `find_optimal_2.5and10.py`: Dedicated to finding the optimal machine learning models for predicting PM2.5 and PM10 levels. It includes hyperparameter tuning and model selection.
-- `train_with_optimal_2.5and10.py`: Utilizes the optimal model parameters identified by `find_optimal_2.5and10.py` to train the models on the full dataset.
-- `train_test_split.py`: Handles the splitting of the dataset into training and testing sets, ensuring a robust validation process.
-- `preprocessing.py`: Conducts initial data preprocessing tasks such as cleaning, encoding, and normalization.
+- `pearson_corr_heatmap.py`: Generates Pearson correlation heatmaps.
+- `find_optimal_2.5and10.py`: Identifies optimal machine learning models for PM2.5 and PM10 prediction, including hyperparameter tuning.
+- `train_with_optimal_2.5and10.py`: Trains models using optimal parameters found by `find_optimal_2.5and10.py`.
+- `train_test_split.py`: Splits the dataset into training and testing sets.
+- `preprocessing.py`: Conducts data preprocessing like cleaning and encoding.
 
 ## How to Use This Repository
+1. **Setting Up**: Clone the repository and install the required Python libraries.
+2. **Data Preparation**: Use `preprocessing.py` for data cleaning and normalization. Then, use `train_test_split.py` to split the data for model training.
+3. **Model Selection and Training**: Run `find_optimal_2.5and10.py` to determine the best model parameters, and then train the models using `train_with_optimal_2.5and10.py`.
+4. **Analysis**: Generate correlation heatmaps with `pearson_corr_heatmap.py`.
+5. **Results**: Check output folders for datasets, predictions, visualizations, and performance metrics.
 
-1) Setting Up: Clone the repository and install the required python libraries listed in requirements.txt.
+## Replicability
+This project is designed for full replicability. Follow the outlined steps using the provided scripts for a comprehensive study replication.
 
-2) Data Preparation:
-
-- The raw data is stored in Raw_Data folder.
-- Run preprocessing.py to clean and normalize the raw data. The preprocessed dataset will automatically be saved under the same directory of the running python file.
-- Execute train_test_split.py to split the data into training and testing sets. The data will be splitted into 4 files: xTrain, yTrain, xTest, yTest. x~ represent the feature set, and y~ represent target variable set. The files will be saved under the same directory of the running python file.
-
-3) Model Selection and Training:
-
-- Use `find_optimal_2.5and10.py` to identify the each models' best parameters. Record the best hyperparameters.
-- Train the models on your dataset using `train_with_optimal_2.5and10.py`.
-
-4) Analysis:
-
-- To analyze correlations between variables, run `pearson_corr_heatmap.py`.
-- The output will be stored in a designated folder for results.
-  
-5) Results:
-
-- Check the output folders in data for processed datasets and model predictions.
-
-- Visualizations and models' performance metrics are saved in the results folder.
-
-### Replicability
-This project is designed for full replicability. By following the steps outlined above and using the provided scripts, you can replicate the entire study or apply the methodology to similar datasets.
-
-### Requirement Python Libraries
-Please use the version new than or equal to the python library in the list
- - Numpy v1.21.0
- - Pandas v2.0.3
- - sklearn v1.3.2
- - matplotlib v3.8.2
- - seaborn v0.12.0b3
- - calendar v2.5
- - math v3.8
- - tqdm v2.2.3
- - tabulate v0.8.0
+## Required Python Libraries (Minimum Version Required)
+- [Numpy v1.21.0](https://numpy.org/)
+- [Pandas v2.0.3](https://pandas.pydata.org/)
+- [scikit-learn v1.3.2](https://scikit-learn.org/stable/)
+- [matplotlib v3.8.2](https://matplotlib.org/)
+- [seaborn v0.12.0b3](https://seaborn.pydata.org/)
+- [calendar v2.5](https://docs.python.org/3/library/calendar.html)
+- [math v3.8](https://docs.python.org/3/library/math.html)
+- [tqdm v2.2.3](https://tqdm.github.io/)
+- [tabulate v0.8.0](https://pypi.org/project/tabulate/)
