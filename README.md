@@ -15,7 +15,7 @@ The data directory is organized into subfolders to manage different stages of da
 ### Scripts Folder
 The scripts directory houses various Python scripts, each tailored for specific tasks in the research process:
 
-- pearson_corr_heatmap.py: Generates Pearson correlation heatmaps to explore relationships between different environmental variables.
+- `pearson_corr_heatmap.py`: Generates Pearson correlation heatmaps to explore relationships between different environmental variables.
 - find_optimal_2.5and10.py: Dedicated to finding the optimal machine learning models for predicting PM2.5 and PM10 levels. It includes hyperparameter tuning and model selection.
 - train_with_optimal_2.5and10.py: Utilizes the optimal model parameters identified by find_optimal_2.5and10.py to train the models on the full dataset.
 - train_test_split.py: Handles the splitting of the dataset into training and testing sets, ensuring a robust validation process.
